@@ -2,7 +2,7 @@ import useStyles from "./stylesheet";
 import {
     MENU
 } from "../../constants"
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
     const classes = useStyles();

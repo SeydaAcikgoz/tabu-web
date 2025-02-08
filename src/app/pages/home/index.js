@@ -1,11 +1,15 @@
 import React from 'react';
-import Button from '../../components/button';
+import {
+    Card
+} from '../../components';
 
 const Home = () => {
-  return <div>
-        <Button/>
+    return <div>
+        <Card
+            mainWord="Roket"
+            forbiddenWords={["Ateş", "Füze", "Atmak", "Mermi", "Mekanik"]}
+        />
     </div>;
-  
 }
 
 export default Home;
