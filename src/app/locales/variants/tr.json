@@ -1,0 +1,13 @@
+{
+    "code": "en",
+    "isRTL": false,
+    "translations": {
+        "darkMode": "🌙 Karanlık Mod",
+        "lightMode": "☀️ Aydınlık Mod",
+        "switchToLight": "☀️ Aydınlık Moda Geç",
+        "switchToDark": "🌙 Karanlık Moda Geç",
+        "hello": "Merhaba!",
+        "changeTheme": "Temayı Değiştir",
+        "changeLanguage": "Dili Değiştir"
+    }
+}

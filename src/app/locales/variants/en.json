@@ -1,0 +1,13 @@
+{
+    "code": "en",
+    "isRTL": false,
+    "translations": {
+        "darkMode": "🌙 Dark Mode",
+        "lightMode": "☀️ Light Mode",
+        "switchToLight": "☀️ Switch to Light Mode",
+        "switchToDark": "🌙 Switch to Dark Mode",
+        "hello": "Hello!",
+        "changeTheme": "Change Theme",
+        "changeLanguage": "Change Language"
+    }
+}
