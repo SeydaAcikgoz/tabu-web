@@ -7,7 +7,6 @@ const Button = () => {
     const { language, toggleLanguage, t } = useLanguage();
 
     const classes = useStyles(theme.colors);
-    console.log(theme.colors)
     return (
         <div
         className={classes.container}
@@ -16,8 +15,8 @@ const Button = () => {
         >
             <div
                 style={{
-                    background: theme.background,
-                    color: theme.textPrimary,
+                    background: theme.colors.background,
+                    color: theme.colors.textPrimary,
                     height: "100vh",
                     display: "flex",
                     flexDirection: "column",
@@ -31,7 +30,6 @@ const Button = () => {
                     onClick={toggleTheme}
                     style={{
                         background: theme.colors.input,
-                        color: theme.buttonText,
                         padding: "10px 20px",
                         borderRadius: "5px",
                         cursor: "pointer",
@@ -60,10 +58,10 @@ const Button = () => {
                         borderRadius: "5px",
                         cursor: "pointer",
                         marginTop: "20px",
-                        fontSize: theme.typography.buttonMedium.fontSize,
-                        fontWeight: theme.typography.buttonMedium.fontWeight,
-                        fontFamily: theme.typography.buttonMedium.fontFamily,
-                        letterSpacing: theme.typography.buttonMedium.letterSpacing,
+                        fontSize: theme.typography.button.fontSize,
+                        fontWeight: theme.typography.button.fontWeight,
+                        fontFamily: theme.typography.button.fontFamily,
+                        letterSpacing: theme.typography.button.letterSpacing,
                     }}
             >
                 {theme.key === "dark" ? "☀️ Aydınlık Moda Geç" : "🌙 Karanlık Moda Geç"}

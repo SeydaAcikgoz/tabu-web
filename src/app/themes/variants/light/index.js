@@ -39,7 +39,7 @@ export const typography = {
     },
     header3: {
         fontFamily: "farsan-regular",
-        fontWeight: 500,
+        fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 26
     },
@@ -72,7 +72,7 @@ export const typography = {
         fontWeight: 600,
         letterSpacing: 0.5,
         lineHeight: 1.40,
-        fontSize: 12
+        fontSize: 25
     }
 };
 

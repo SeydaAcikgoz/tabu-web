@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-    Card
+    Card,
+    Button
 } from '../../components';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             mainWord="Roket"
             forbiddenWords={["Ateş", "Füze", "Atmak", "Mermi", "Mekanik"]}
         />
+        <Button/>
     </div>;
 }
 

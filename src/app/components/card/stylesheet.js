@@ -4,31 +4,26 @@ import {
 
 const useStyles = createUseStyles({
     container: {
-        boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)",
-        border: "3px solid #000",
+        boxShadow: (props) => `0px 10px 20px ${props.colors.gray80}`,
+        fontFamily: "farsan-regular",
+        backgroundSize: "cover",
+        border: "3px solid",
         borderRadius: 10,
-        width: 250,
+        width: "250px",
     },
-    header: {
-        //background: "linear-gradient(90deg, #474747 0%, #616161 25%, #7A7A7A 50%, #474747 100%)",
-        backgroundColor: (props) =>props.colors.gray100,
-        color: (props) =>props.colors.gray0,
+    headerContainer: {
         textAlign: "center",
-        padding: "10px",
         fontSize: "18px",
-        fontWeight: "bold",
+        padding: 10,
     },
-    wordList: {
-        display: "flex",
+    contentContainer: {
         flexDirection: "column",
-        padding: "15px",
         textAlign: "center",
+        display: "flex",
+        padding: 10,
     },
     word: {
-        fontSize: "16px",
-        fontWeight: "bold",
-        color: "#444",
-        margin: "5px 0",
+        margin: 5,
     },
 }, {
     classNamePrefix: "Card-Component"

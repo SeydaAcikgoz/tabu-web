@@ -4,8 +4,10 @@ import {
 
 const useStyles = createUseStyles({
     "@global": {
-        "fontFamily": "farsan-regular",
-        "src": "url('/assets/fonts/Farsan-Regular.ttf')"
+        "@font-face": {
+            "fontFamily": "farsan-regular",
+            "src": "url('/assets/fonts/Farsan-Regular.ttf')",
+        }
     }
 }, {
     classNamePrefix: "Global"

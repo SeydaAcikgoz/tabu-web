@@ -13,21 +13,36 @@ const Header = ({
         className={classes.container}
     >
         <div
-            className={classes.header}
+            className={classes.headerContainer}
+            style={{
+                backgroundImage: theme.colors.linear,
+                color: theme.colors.gray0,
+                ...theme.typography.header3
+            }}
         >
-        {mainWord.toUpperCase()}
+            {mainWord.toUpperCase()}
         </div>
         <div
-            className={classes.wordList}
+            className={classes.contentContainer}
         >
             {forbiddenWords.map((word, index) => (
-                <p key={index}
+                <p
                     className={classes.word}
+                    style={{
+                        ...theme.typography.header5
+                    }}
+                    key={index}
                 >
                     {word.toUpperCase()}
                 </p>
             ))}
         </div>
+        <button style={theme.typography.header1}>
+            Butona Tıkla
+        </button>
+        <button style={theme.typography.button}>
+            Butona Tıkla
+        </button>
     </div>
 };
 export default Header;
