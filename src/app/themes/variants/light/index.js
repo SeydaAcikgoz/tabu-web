@@ -9,6 +9,7 @@ export const colors = {
     "attention":            "#ffaf36",
     "info":                 "#1e5de5",
     "text":                 "#000000",
+    "red":                  "#bb1616",
     "gray0":                "hsl(0, 0%, 100%)",
     "gray10":               "hsl(0, 0%, 90%)",
     "gray20":               "hsl(0, 0%, 80%)",

@@ -37,12 +37,6 @@ const Card = ({
                 </p>
             ))}
         </div>
-        <button style={theme.typography.header1}>
-            Butona Tıkla
-        </button>
-        <button style={theme.typography.button}>
-            Butona Tıkla
-        </button>
     </div>
 };
 export default Card;

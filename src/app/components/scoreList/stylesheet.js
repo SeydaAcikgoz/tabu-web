@@ -12,8 +12,8 @@ const useStyles = createUseStyles({
         border: "3px solid",
         borderRadius: 10,
         display: "flex",
-        width: "100%",
         padding: 15,
+        margin: 10,
         gap: 30
     },
     roundNumber: {
