@@ -2,7 +2,7 @@ import React from "react";
 import useStyles from "./stylesheet";
 import { useTheme } from "../../context/ThemeContext";
 
-const Header = ({
+const Card = ({
     forbiddenWords,
     mainWord
 }) => {
@@ -45,4 +45,4 @@ const Header = ({
         </button>
     </div>
 };
-export default Header;
+export default Card;

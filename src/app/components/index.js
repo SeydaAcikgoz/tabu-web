@@ -11,9 +11,9 @@ export {
 } from "./header"
 
 export {
-    default as ScorBoard
-} from "./scorBoard"
+    default as ScoreBoard
+} from "./scoreBoard"
 
 export {
-    default as ScorList
-} from "./scorList"
+    default as ScoreList
+} from "./scoreList"

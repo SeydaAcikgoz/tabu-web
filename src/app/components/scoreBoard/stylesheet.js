@@ -4,30 +4,37 @@ import {
 
 const useStyles = createUseStyles({
     container: {
+        background: "linear-gradient(to right, #E5E5E51A, #E5E5E51A)",
         boxShadow: (props) => `0px 10px 20px ${props.colors.gray80}`,
         fontFamily: "farsan-regular",
-        backgroundSize: "cover",
+        flexDirection:"column",
+        alignItems: "center",
         border: "3px solid",
         borderRadius: 10,
+        display: "flex",
         width: "40%",
     },
     headerContainer: {
-        borderRadius: "8px 8px 0 0",
         textAlign: "center",
-        fontSize: "18px",
+        borderRadius: 10,
+        width: "50%",
         padding: 10,
+        margin: 15,
     },
     contentContainer: {
         flexDirection: "column",
         textAlign: "center",
         display: "flex",
-        padding: 10,
+        width: "50%",
+        margin: 15,
+        gap: 15
     },
-    word: {
-        margin: 5,
+    statBox: {
+        borderRadius: 10,
+        padding: 5,
     },
 }, {
-    classNamePrefix: "Card-Component"
+    classNamePrefix: "ScoreList-Component"
 });
 
 export default useStyles;
