@@ -12,6 +12,9 @@ const ScoreList = ({
 
     return <div
         className={classes.container}
+        style={{
+            background:theme.colors.cardBackground
+        }}
     >
         <div
             className={classes.roundNumber}
@@ -31,7 +34,10 @@ const ScoreList = ({
         >
             {teamsName}
         </div>
-        <div 
+        <div
+            className={classes.info}
+        >
+            <div 
             className={classes.infoBox}
             style={{
                 background: theme.colors.gray0,
@@ -48,6 +54,7 @@ const ScoreList = ({
             }}
         >
             Skor: {score}
+        </div>
         </div>
     </div>
 };

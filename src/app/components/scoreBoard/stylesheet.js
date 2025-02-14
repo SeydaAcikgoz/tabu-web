@@ -4,7 +4,6 @@ import {
 
 const useStyles = createUseStyles({
     container: {
-        background: "linear-gradient(to right, #E5E5E51A, #E5E5E51A)",
         boxShadow: (props) => `0px 10px 20px ${props.colors.gray80}`,
         fontFamily: "farsan-regular",
         flexDirection:"column",

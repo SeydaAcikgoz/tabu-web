@@ -4,10 +4,10 @@ import {
 
 const useStyles = createUseStyles({
     container: {
-        background: "linear-gradient(to right, #E5E5E51A, #E5E5E51A)",
         boxShadow: (props) => `0px 10px 20px ${props.colors.gray80}`,
+        justifyContent: "space-between",
         fontFamily: "farsan-regular",
-        alignItems: "center", 
+        alignItems: "center",
         flexDirection:"row",
         border: "3px solid",
         borderRadius: 10,
@@ -28,6 +28,11 @@ const useStyles = createUseStyles({
     teamInfo: {
         borderRadius: 10,
         padding: 10,
+    },
+    info:{
+        whiteSpace: "nowrap",
+        display: "flex",
+        gap: 30
     },
     infoBox: {
         borderRadius: 10,

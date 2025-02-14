@@ -22,7 +22,9 @@ export const colors = {
     "gray90":               "hsl(0, 0%, 90%)",
     "gray100":              "hsl(0, 0%, 100%)",
     "modalBackground":      "rgba(0, 0, 0, 0.5)",
-    "linear":               "linear-gradient(90deg, #474747 0%, #616161 25%, #7A7A7A 50%, #474747 100%)"
+    "linear":               "linear-gradient(90deg, #474747 0%, #616161 25%, #7A7A7A 50%, #474747 100%)",
+    "cardBackground":       "linear-gradient(to right, #E5E5E51A, #E5E5E51A)"
+
 };
 
 export const typography = {

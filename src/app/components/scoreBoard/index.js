@@ -12,6 +12,9 @@ const ScorBoard = ({
 
     return <div
         className={classes.container}
+        style={{
+            background:theme.colors.cardBackground
+        }}
     >
         <div
             className={classes.headerContainer}
