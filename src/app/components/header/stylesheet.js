@@ -8,14 +8,20 @@ const useStyles = createUseStyles({
         fontFamily: "farsan-regular",
         flexDirection:"row",
         alignItems: "center",
+        justifyContent: "space-between",
         borderRadius: 10,
         display: "flex",
         margin: 10,
         gap: 20,
     },
     headerContainer: {
-        textAlign: "center",
         padding: 10,
+        margin: 15,
+    },
+    contentContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        display: "flex",
         margin: 15,
     },
     iconContainer: {
@@ -28,7 +34,6 @@ const useStyles = createUseStyles({
     buttonContainer: {
         textAlign: "center",
         display: "flex",
-        width: "50%",
         margin: 15,
     },
     icon: {

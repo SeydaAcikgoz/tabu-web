@@ -11,6 +11,7 @@ const useStyles = createUseStyles({
     },
     button: {
         alignItems: "center",
+        whiteSpace: "nowrap",
         cursor: "pointer",
         borderRadius: 10,
         display: "flex",

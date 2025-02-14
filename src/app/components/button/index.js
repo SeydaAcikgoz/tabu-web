@@ -8,10 +8,9 @@ const Button = ({
     icon,
     color
 }) => {
-    const { theme, toggleTheme } = useTheme();
-    const { language, toggleLanguage,} = useLanguage();
-
+    const { theme } = useTheme();
     const classes = useStyles(theme.colors);
+    
     return (
         <div
         className={classes.container}
@@ -26,7 +25,7 @@ const Button = ({
             >
                 {icon &&
                     <img src={icon} alt="icon"
-                    className={classes.icon}
+                        className={classes.icon}
                     />
                 }
                 {title &&

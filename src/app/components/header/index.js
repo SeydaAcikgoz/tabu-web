@@ -42,19 +42,27 @@ const Header = () => {
             TABOOOOOOOOOOOO
         </div>
         <div
-            className={classes.iconContainer}
+            className={classes.contentContainer}
+            style={{
+                color: theme.colors.gray100,
+                ...theme.typography.header1
+            }}
         >
-            <img src={Language} alt="icon"
-                className={classes.icon}
-            />
-            <img src={DarkTheme} alt="icon"
-                className={classes.icon}
-            />
-        </div>
-        <div
-            className={classes.buttonContainer}
-        >
-            <Button title="Giriş Yap" color="red" onClick={() => alert("Clicked!")} />
+            <div
+                className={classes.iconContainer}
+            >
+                <img src={Language} alt="icon"
+                    className={classes.icon}
+                />
+                <img src={DarkTheme} alt="icon"
+                    className={classes.icon}
+                />
+            </div>
+            <div
+                className={classes.buttonContainer}
+            >
+                <Button title="Giriş Yap" color="red" onClick={() => alert("Clicked!")} />
+            </div>
         </div>
     </div>
 };
