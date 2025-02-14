@@ -1,12 +1,11 @@
 import { useTheme } from "../../context/ThemeContext";
-import { useLanguage } from "../../context/LanguageContext";
 import useStyles from "./stylesheet";
 
 const Button = ({ 
     onClick,
     title,
+    color,
     icon,
-    color
 }) => {
     const { theme } = useTheme();
     const classes = useStyles(theme.colors);

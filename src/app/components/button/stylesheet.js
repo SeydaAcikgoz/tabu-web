@@ -5,9 +5,6 @@ import {
 const useStyles = createUseStyles({
     container: {
         textAlign: "center",
-        padding: 20,
-        gap: 108,
-        display: "flex",
     },
     button: {
         alignItems: "center",
@@ -23,8 +20,8 @@ const useStyles = createUseStyles({
         // }
     },
     icon: {
-        height: "20px",
-        width: "20px",
+        height: "30px",
+        width: "30px",
     }
 }, {
     classNamePrefix: "Component-Button"

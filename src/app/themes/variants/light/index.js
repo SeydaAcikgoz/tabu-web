@@ -41,6 +41,7 @@ export const typography = {
     },
     header3: {
         fontFamily: "farsan-regular",
+        letterSpacing: 1,
         fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 26
@@ -53,6 +54,7 @@ export const typography = {
     },
     header5: {
         fontFamily: "farsan-regular",
+        letterSpacing: 1.5,
         fontWeight: 600,
         lineHeight: 1.3,
         fontSize: 22
