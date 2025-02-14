@@ -16,7 +16,7 @@ const useStyles = createUseStyles({
         margin: 10,
         gap: 30
     },
-    roundNumber: {
+    roundContainer: {
         justifyContent: "center",
         alignItems: "center",
         borderRadius: "50%",
@@ -25,16 +25,16 @@ const useStyles = createUseStyles({
         width: "30px",
         padding: 10,
     },
-    teamInfo: {
+    teamContainer: {
         borderRadius: 10,
         padding: 10,
     },
-    info:{
+    infoContainer: {
         whiteSpace: "nowrap",
         display: "flex",
         gap: 30
     },
-    infoBox: {
+    infoContent: {
         borderRadius: 10,
         padding: 10,
     },

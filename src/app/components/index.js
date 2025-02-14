@@ -11,6 +11,10 @@ export {
 } from "./header"
 
 export {
+    default as Modal
+} from "./modal"
+
+export {
     default as ScoreBoard
 } from "./scoreBoard"
 

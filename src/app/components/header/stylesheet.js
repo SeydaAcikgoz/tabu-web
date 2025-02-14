@@ -31,15 +31,15 @@ const useStyles = createUseStyles({
         margin: 15,
         gap: 30
     },
+    icon: {
+        height: "30px",
+        width: "30px",
+    },
     buttonContainer: {
         textAlign: "center",
         display: "flex",
         margin: 15,
     },
-    icon: {
-        height: "30px",
-        width: "30px",
-    }
 }, {
     classNamePrefix: "Header-Component"
 });

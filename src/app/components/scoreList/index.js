@@ -17,7 +17,7 @@ const ScoreList = ({
         }}
     >
         <div
-            className={classes.roundNumber}
+            className={classes.roundContainer}
             style={{
                 background: theme.colors.attention,
                 ...theme.typography.header3
@@ -26,7 +26,7 @@ const ScoreList = ({
             {id}
         </div>
         <div 
-            className={classes.teamInfo}
+            className={classes.teamContainer}
             style={{
                 background: theme.colors.gray40,
                 ...theme.typography.header3
@@ -35,10 +35,10 @@ const ScoreList = ({
             {teamsName}
         </div>
         <div
-            className={classes.info}
+            className={classes.infoContainer}
         >
             <div 
-            className={classes.infoBox}
+            className={classes.infoContent}
             style={{
                 background: theme.colors.gray0,
                 ...theme.typography.header3
@@ -47,7 +47,7 @@ const ScoreList = ({
             Kazanan: {winnerTeam}
         </div>
         <div 
-            className={classes.infoBox}
+            className={classes.infoContent}
             style={{
                 background: theme.colors.gray0,
                 ...theme.typography.header3

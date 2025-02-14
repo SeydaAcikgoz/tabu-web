@@ -38,7 +38,7 @@ const Home = () => {
             id="1"
         />
         <div
-        className={classes.container}
+            className={classes.container}
             style={{
             }}
         >
@@ -54,7 +54,6 @@ const Home = () => {
                 }}
             >
                 <h1>{theme.key === "dark" ? t.darkMode : t.lightMode}</h1>
-
                 <button
                     onClick={toggleTheme}
                     style={{
