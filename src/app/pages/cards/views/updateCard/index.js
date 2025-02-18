@@ -84,10 +84,14 @@ const UpdateCart = ({
             }}
         >
             <Button
-                title="Yeni Kart Oluştur"
-                color="info"
+                title="Kartı Güncelle"
+                color="warning"
                 onClick={() => alert(Object.values(keywords).join('\n'))}
-
+            />
+            <Button
+                title="Kartı Sil"
+                color="danger"
+                onClick={() => alert(Object.values(keywords).join('\n'))}
             />
         </div>;
     };
