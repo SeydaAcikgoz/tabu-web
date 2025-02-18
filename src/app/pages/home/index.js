@@ -34,7 +34,6 @@ const Home = () => {
             isVisible={isModalOpen.isVisible}
             children={
                     <CreateTeam
-                        userFirstName = {"ssssss"}
                         onClose= {()=>{
                             setIsModalOpen({
                                 isVisible: false,
@@ -129,18 +128,19 @@ const Home = () => {
         <Button icon={CheckIcon} title="Home" color="success" onClick={() => alert("Clicked!")} />
         <Header/>
 
-        <Button title="Modal"
+        <Button
+            title="Modal"
             onClick={() => {
-            setIsModalOpen({
-                isVisible: true,
-            });
+                setIsModalOpen({
+                    isVisible: true,
+                });
             }}
         />
 
-         <Input 
+        <Input 
             label="Adınız"
-             value={name} 
-            onValueChange={setName}
+            value={name} 
+            onChange={setName}
         />
         <p>Girilen Ad: {name}</p>
 

@@ -2,7 +2,8 @@ import React, {
     useState
 } from 'react';
 import {
-    Button
+    Button,
+    Input
 } from '../../../../components';
 import useStyles from './stylesheet';
 import { useTheme } from "../../../../context/ThemeContext";
@@ -14,6 +15,9 @@ const CreateTeam = ({
 }) => {
     const { theme } = useTheme();
     const classes = useStyles(theme.colors);
+
+    const [firstTeam, setFirstTeam]= useState("");
+    const [secondTeam, setSecondTeam]= useState("");
 
     const [showDialog, setShowDialog] = useState({
         isView: false,
@@ -48,11 +52,19 @@ const CreateTeam = ({
     };
 
     const renderContent = () => {
-        return <div className={classes.inputField}
+        return <div
+            className={classes.inputField}
             style={{
-            }}>
-                <input type="text" placeholder="Input 1" className={classes.input} />
-                <input type="text" placeholder="Input 2" className={classes.input} />
+            }}
+        >
+            <Input 
+                label="1.Takım Adı:"
+                onChange={(text) => setFirstTeam(text)}
+            />
+            <Input 
+                label="2.Takım Adı:"
+                onChange={(text) => setSecondTeam(text)}
+            />
         </div>;
     };
     
@@ -66,7 +78,7 @@ const CreateTeam = ({
             <Button
                 title="Takım Oluştur"
                 color="info"
-                onClick={() => alert("Clicked!")}
+                onClick={() => alert(`Takım 1: ${firstTeam}\nTakım 2: ${secondTeam}`)}
             />
         </div>;
     };

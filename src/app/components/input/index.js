@@ -3,7 +3,7 @@ import useStyles from "./stylesheet";
 import { useTheme } from "../../context/ThemeContext";
 
 const Input = ({
-    onValueChange,
+    onChange,
     value,
     label
 }) => {
@@ -13,7 +13,7 @@ const Input = ({
 
     const handleChange = (e) => {
         setInputValue(e.target.value);
-        onValueChange(e.target.value);
+        onChange(e.target.value);
     };
 
     return (
