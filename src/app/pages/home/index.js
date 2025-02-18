@@ -1,20 +1,54 @@
-import React from 'react';
+import React, {
+    useState
+} from 'react';
 import {
     ScoreBoard,
     ScoreList,
     Button,
     Header,
+    Input,
+    Modal,
     Card,
 } from '../../components';
 import { useTheme } from "../../context/ThemeContext";
 import { useLanguage } from "../../context/LanguageContext";
 import useStyles from "./stylesheet";
 import CheckIcon from "../../assets/icons/check-solid.svg";
+import {
+    CreateTeam
+} from './views';
 
 const Home = () => {
+    
+    const [name, setName] = useState("");
     const { theme, toggleTheme } = useTheme();
     const { language, toggleLanguage, t } = useLanguage();
     const classes = useStyles(theme.colors);
+
+    const [isModalOpen, setIsModalOpen] = useState({
+        isVisible: false
+    });
+
+    const renderModalContainer = () =>{
+        return <Modal
+            isVisible={isModalOpen.isVisible}
+            children={
+                    <CreateTeam
+                        userFirstName = {"ssssss"}
+                        onClose= {()=>{
+                            setIsModalOpen({
+                                isVisible: false,
+                            });
+                        }}
+                    />
+            }
+            onClose={() => {
+                setIsModalOpen({
+                    isVisible: false,
+                });
+            }}
+        />;
+    };
 
     return <div
         style={{
@@ -95,6 +129,22 @@ const Home = () => {
         <Button icon={CheckIcon} title="Home" color="success" onClick={() => alert("Clicked!")} />
         <Header/>
 
+        <Button title="Modal"
+            onClick={() => {
+            setIsModalOpen({
+                isVisible: true,
+            });
+            }}
+        />
+
+         <Input 
+            label="Adınız"
+             value={name} 
+            onValueChange={setName}
+        />
+        <p>Girilen Ad: {name}</p>
+
+        {renderModalContainer()}
     </div>;
 }
 
