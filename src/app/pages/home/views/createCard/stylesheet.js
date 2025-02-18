@@ -5,10 +5,10 @@ import {
 const useStyles = createUseStyles({
     container: {
         flexDirection: "column",
+        borderRadius: 10,
         display: "flex",
-        width: "500px",
+        width: "600px",
         padding: 15,
-        borderRadius: 10
     },
     modalHeader :{
         justifyContent: 'space-between',
@@ -19,7 +19,7 @@ const useStyles = createUseStyles({
         flexDirection: "column",
         display: "flex",
         margin: 10,
-        gap: 10
+        gap: 5,
     },
     modalButtons: {
         justifyContent: "center",

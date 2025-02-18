@@ -15,7 +15,8 @@ import { useLanguage } from "../../context/LanguageContext";
 import useStyles from "./stylesheet";
 import CheckIcon from "../../assets/icons/check-solid.svg";
 import {
-    CreateTeam
+    CreateTeam,
+    CreateCart
 } from './views';
 
 const Home = () => {
@@ -26,13 +27,15 @@ const Home = () => {
     const classes = useStyles(theme.colors);
 
     const [isModalOpen, setIsModalOpen] = useState({
-        isVisible: false
+        isVisible: false,
+        transaction: "",
     });
 
     const renderModalContainer = () =>{
         return <Modal
             isVisible={isModalOpen.isVisible}
             children={
+                isModalOpen.transaction === "team" ?
                     <CreateTeam
                         onClose= {()=>{
                             setIsModalOpen({
@@ -40,6 +43,17 @@ const Home = () => {
                             });
                         }}
                     />
+                    :
+                    isModalOpen.transaction === "card" ?
+                        <CreateCart
+                            onClose= {()=>{
+                            setIsModalOpen({
+                                isVisible: false,
+                            });
+                        }}
+                        />
+                    :
+                    null
             }
             onClose={() => {
                 setIsModalOpen({
@@ -129,9 +143,19 @@ const Home = () => {
         <Header/>
 
         <Button
-            title="Modal"
+            title="Modal-Team"
             onClick={() => {
                 setIsModalOpen({
+                    transaction: "team",
+                    isVisible: true,
+                });
+            }}
+        />
+        <Button
+            title="Modal-Card"
+            onClick={() => {
+                setIsModalOpen({
+                    transaction: "card",
                     isVisible: true,
                 });
             }}

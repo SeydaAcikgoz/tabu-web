@@ -6,12 +6,12 @@ const useStyles = createUseStyles({
         alignItems: "center",
         borderRadius: 10,
         display: "flex",
-        margin: 10,
     },
     labelContent: {
         borderRadius: 10,
         padding: 10,
         margin: 10,
+        width: "40%"
     },
     content: {
         borderRadius: 10,
@@ -19,6 +19,7 @@ const useStyles = createUseStyles({
         border: "none",
         padding: 10,
         margin: 10,
+        width: "40%"
     },
 }, {
     classNamePrefix: "Input-Component",
