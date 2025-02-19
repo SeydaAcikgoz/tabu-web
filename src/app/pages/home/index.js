@@ -13,11 +13,18 @@ import {
 import { useTheme } from "../../context/ThemeContext";
 import { useLanguage } from "../../context/LanguageContext";
 import useStyles from "./stylesheet";
-import CheckIcon from "../../assets/icons/check-solid.svg";
 import {
     CreateTeam,
     CreateCart
 } from './views';
+import {
+    CheckIcon,
+    DarkThemeIcon,
+    ChangeIcon,
+    LanguageIcon,
+    RotateIcon,
+    UserIcon
+} from '../../assets/icons';
 
 const Home = () => {
     
@@ -68,6 +75,7 @@ const Home = () => {
             background: theme.colors.info
         }}
     >
+        <LanguageIcon size={50} color='#ffffff' />
         <Card
             forbiddenWords={["Ateş", "Füze", "Atmak", "Mermi", "Mekanik"]}
             mainWord="Roket"

@@ -5,7 +5,7 @@ const Button = ({
     onClick,
     title,
     color,
-    icon,
+    icon: Icon, // String veya SVGR bileşeni olabilir
 }) => {
     const { theme } = useTheme();
     const classes = useStyles(theme.colors);
@@ -22,10 +22,13 @@ const Button = ({
                 }}
                 onClick={onClick}
             >
-                {icon &&
-                    <img src={icon} alt="icon"
-                        className={classes.icon}
-                    />
+                {Icon ? (
+                    typeof Icon === "string" ? (
+                        <img src={Icon} alt="icon" className={classes.icon} />
+                    ) : (
+                        <Icon className={classes.icon} />
+                    ))
+                    : null
                 }
                 {title &&
                     <span 

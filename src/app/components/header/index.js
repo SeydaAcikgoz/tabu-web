@@ -5,9 +5,11 @@ import {
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
 import { useLanguage } from "../../context/LanguageContext";
-import Language from "../../assets/icons/world-svgrepo-com.svg"
-import LightTheme from "../../assets/icons/sun-light-theme-svgrepo-com.svg"
-import DarkTheme from "../../assets/icons/moon-dark-theme-svgrepo-com.svg"
+import {
+    LightThemeIcon,
+    DarkThemeIcon,
+    LanguageIcon
+} from '../../assets/icons';
 import Button from "../../../app/components/button";
 
 const Header = () => {
@@ -55,13 +57,13 @@ const Header = () => {
             >
                 <Button
                     onClick={toggleLanguage}
-                    icon={Language}
+                    icon={LanguageIcon}
                     color="gray0"
                     className={classes.icon}
                 />
                 <Button
                     onClick={toggleTheme}
-                    icon={theme.key === "light" ? LightTheme : DarkTheme}
+                    icon={theme.key === "light" ? LightThemeIcon : DarkThemeIcon}
                     color="gray0"
                     className={classes.icon}
                 />

@@ -8,8 +8,9 @@ import {
 import useStyles from './stylesheet';
 import { useTheme } from "../../../../context/ThemeContext";
 import { useLanguage } from "../../../../context/LanguageContext";
-import CloseIcon from "../../../../assets/icons/x-solid.svg";
-
+import {
+    CloseIcon
+} from '../../../../assets/icons';
 const CreateCart = ({
     onClose
 }) => {
