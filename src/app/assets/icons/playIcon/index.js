@@ -11,7 +11,7 @@ const Play = ({
         viewBox="0 0 384 512"
         height={size}
         width={size}
-        fill="none"
+        fill={color}
         {...props}
     >
         <path

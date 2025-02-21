@@ -10,8 +10,8 @@ const Check = ({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
         height={size}
+        fill={color}
         width={size}
-        fill="none"
         {...props}
     >
         <path

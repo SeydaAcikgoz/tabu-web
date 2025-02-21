@@ -26,7 +26,7 @@ const Button = ({
                     typeof Icon === "string" ? (
                         <img src={Icon} alt="icon" className={classes.icon} />
                     ) : (
-                        <Icon className={classes.icon} />
+                        <Icon className={classes.icon} color={theme.colors.text} />
                     ))
                     : null
                 }

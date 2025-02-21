@@ -11,7 +11,7 @@ const Plus = ({
         viewBox="0 0 448 512"
         height={size}
         width={size}
-        fill="none"
+        fill={color}
         {...props}
     >
         <path

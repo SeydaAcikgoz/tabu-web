@@ -58,13 +58,13 @@ const Header = () => {
                 <Button
                     onClick={toggleLanguage}
                     icon={LanguageIcon}
-                    color="gray0"
+                    color="gray40"
                     className={classes.icon}
                 />
                 <Button
                     onClick={toggleTheme}
-                    icon={theme.key === "light" ? LightThemeIcon : DarkThemeIcon}
-                    color="gray0"
+                    icon={theme.key === "light" ? LightThemeIcon  : DarkThemeIcon}
+                    color="gray40"
                     className={classes.icon}
                 />
             </div>

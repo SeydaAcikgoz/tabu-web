@@ -24,7 +24,7 @@ const Input = ({
                 <label
                     className={classes.labelContent}
                     style={{
-                        backgroundColor: theme.colors.gray50,
+                        backgroundColor: theme.colors.gray0,
                         ...theme.typography.header3
                     }}
                 >

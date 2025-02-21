@@ -29,53 +29,62 @@ export const colors = {
 export const typography = {
     header1: {
         fontFamily: "farsan-regular",
+        color: colors.text,
         fontWeight: 300,
         lineHeight: 1.3,
-        fontSize: 48
+        fontSize: 48,
+        
     },
     header2: {
         fontFamily: "farsan-regular",
+        color: colors.text,
         fontWeight: 400,
         lineHeight: 1.3,
-        fontSize: 32
+        fontSize: 32,
     },
     header3: {
         fontFamily: "farsan-regular",
+        color: colors.text,
         letterSpacing: 1,
         fontWeight: 600,
         lineHeight: 1.3,
-        fontSize: 26
+        fontSize: 26,
     },
     header4: {
         fontFamily: "farsan-regular",
+        color: colors.text,
         fontWeight: 400,
         lineHeight: 1.3,
-        fontSize: 22
+        fontSize: 22,
     },
     header5: {
         fontFamily: "farsan-regular",
         letterSpacing: 1.5,
+        color: colors.text,
         fontWeight: 600,
         lineHeight: 1.3,
-        fontSize: 22
+        fontSize: 22,
     },
     header6: {
         fontFamily: "farsan-regular",
+        color: colors.text,
         fontWeight: 400,
         lineHeight: 1.3,
-        fontSize: 18
+        fontSize: 18,
     },
     body: {
         fontFamily: "farsan-regular",
-        fontWeight: 400,
+        color: colors.text,
         lineHeight: 1.42,
-        fontSize: 14
+        fontWeight: 400,
+        fontSize: 14,
     },
     button: {
         fontFamily: "farsan-regular",
-        fontWeight: 600,
         letterSpacing: 0.5,
+        color: colors.text,
         lineHeight: 1.40,
+        fontWeight: 600,
         fontSize: 25
     }
 };

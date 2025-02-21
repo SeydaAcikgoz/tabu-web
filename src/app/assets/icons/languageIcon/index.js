@@ -9,8 +9,8 @@ const Language = ({
     return <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 48 48"
-        fill="#000000"
         height={size}
+        fill={color}
         width={size}
         {...props}
     >

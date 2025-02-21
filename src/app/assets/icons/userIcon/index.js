@@ -11,7 +11,7 @@ const User = ({
         viewBox="0 0 512 512"
         height={size}
         width={size}
-        fill="none"
+        fill={color}
         {...props}
     >
         <path

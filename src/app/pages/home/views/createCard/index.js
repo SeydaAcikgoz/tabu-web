@@ -53,7 +53,7 @@ const CreateCart = ({
             </span>
             <Button
                 icon={CloseIcon}
-                color="gray0"
+                color={theme.colors.gray0} 
                 onClick={() => {
                     onClose();
                 }}
