@@ -15,7 +15,7 @@ import Button from "../../../app/components/button";
 const Header = () => {
     const navigate = useNavigate();
     
-    const { language, toggleLanguage, t } = useLanguage();
+    const { toggleLanguage, translation } = useLanguage();
     const { theme, toggleTheme } = useTheme();
     const classes = useStyles(theme);
 
@@ -71,7 +71,7 @@ const Header = () => {
             <div
                 className={classes.buttonContainer}
             >
-                <Button title="Giriş Yap" color="red" onClick={() => alert("Clicked!")} />
+                <Button title={translation.login} color="red" onClick={() => alert("Clicked!")} />
             </div>
         </div>
     </div>

@@ -1,5 +1,6 @@
 import useStyles from "./stylesheet";
 import { useTheme } from "../../context/ThemeContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ScorBoard = ({
     correctCount,
@@ -9,7 +10,8 @@ const ScorBoard = ({
 }) => {
     const { theme } = useTheme();
     const classes = useStyles(theme);
-
+    const { translation } = useLanguage();
+    
     return <div
         className={classes.container}
         style={{
@@ -36,7 +38,7 @@ const ScorBoard = ({
                     ...theme.typography.header3
                 }}
             >
-                Doğru Sayısı: {correctCount}
+                {translation.correctCount} {correctCount}
             </div>
             <div 
                 className={classes.statBox}
@@ -45,7 +47,7 @@ const ScorBoard = ({
                     ...theme.typography.header3
                 }}
             >
-                Tabu Sayısı: {tabooCount}
+                {translation.tabooCount} {tabooCount}
             </div>
             <div 
                 className={classes.statBox}
@@ -54,7 +56,7 @@ const ScorBoard = ({
                     ...theme.typography.header3
                 }}
             >
-                Skor: {score}
+                {translation.score} {score}
             </div>
         </div>
     </div>

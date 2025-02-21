@@ -1,6 +1,6 @@
 import useStyles from "./stylesheet";
 import { useTheme } from "../../context/ThemeContext";
-
+import { useLanguage } from "../../context/LanguageContext";
 const ScoreList = ({
     winnerTeam,
     teamsName,
@@ -9,6 +9,7 @@ const ScoreList = ({
 }) => {
     const { theme } = useTheme();
     const classes = useStyles(theme);
+    const { translation } = useLanguage();
 
     return <div
         className={classes.container}
@@ -44,7 +45,7 @@ const ScoreList = ({
                 ...theme.typography.header3
             }}
         >
-            Kazanan: {winnerTeam}
+            {translation.winner} {winnerTeam}
         </div>
         <div 
             className={classes.infoContent}
@@ -53,7 +54,7 @@ const ScoreList = ({
                 ...theme.typography.header3
             }}
         >
-            Skor: {score}
+            {translation.score} {score}
         </div>
         </div>
     </div>

@@ -20,7 +20,7 @@ export const LanguageProvider = ({children}) => {
         language: languages[language].code, 
             isRTL: languages[language].isRTL,
             toggleLanguage, 
-            t: languages[language].translations // Çeviri nesnesi
+            translation: languages[language].translations // Çeviri nesnesi
     };
 
     return <LanguageContext.Provider value={values}>

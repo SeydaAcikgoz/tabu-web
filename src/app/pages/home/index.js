@@ -30,7 +30,7 @@ const Home = () => {
     
     const [name, setName] = useState("");
     const { theme, toggleTheme } = useTheme();
-    const { language, toggleLanguage, t } = useLanguage();
+    const { language, toggleLanguage, translation } = useLanguage();
     const classes = useStyles(theme.colors);
 
     const [isModalOpen, setIsModalOpen] = useState({
@@ -108,7 +108,7 @@ const Home = () => {
                     alignItems: "center",
                 }}
             >
-                <h1>{theme.key === "dark" ? t.darkMode : t.lightMode}</h1>
+                <h1>{theme.key === "dark" ? translation.darkMode : translation.lightMode}</h1>
                 <button
                     onClick={toggleTheme}
                     style={{
@@ -120,10 +120,10 @@ const Home = () => {
                         boxShadow: `0px 4px 6px ${theme.shadow}`,
                     }}
                 >
-                    {theme.key === "dark" ? t.switchToLight : t.switchToDark}
+                    {theme.key === "dark" ? translation.switchToLight : translation.switchToDark}
                 </button>
             </div>
-            <h1>{t.hello}</h1>
+            <h1>{translation.hello}</h1>
             <button onClick={toggleTheme}>
                 {language === "tr" ? "Temayı Değiştir" : "Change Theme"}
             </button>
